@@ -23,3 +23,27 @@ This is a test repository for Jules.
 괴로우나 즐거우나 나라 사랑하세.
 무궁화 삼천리 화려 강산
 대한 사람, 대한으로 길이 보전하세.
+
+## Running the FastAPI Application
+
+To run the FastAPI application, follow these steps:
+
+1.  **Install dependencies:**
+    ```bash
+    pip install -r requirements.txt
+    ```
+
+2.  **Run the application:**
+    ```bash
+    uvicorn main:app --reload
+    ```
+
+    The application will be available at `http://127.0.0.1:8000`.
+
+### Login Endpoint
+
+The application includes a login endpoint at `/login`. It accepts POST requests with a JSON body containing `username` and `password`.
+
+Example credentials:
+-   Username: `testuser`
+-   Password: `testpassword`
